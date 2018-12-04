@@ -28,5 +28,5 @@ goog.provide('Blockly.Arduino.bioblocks');
 goog.require('Blockly.Arduino');
 
 Blockly.Arduino['pin_dropdown'] = function(block) {
-  return ["char pin[] = \"" + block.getFieldValue('CONSTANT') + "\";", 1];
+  return ["char pin" + block.getFieldValue('CONSTANT') +  " = " + block.getFieldValue('CONSTANT') + ";"];
 };
