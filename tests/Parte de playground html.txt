@@ -1,0 +1,15 @@
+Añade a la lista de scripts incluidos de playground
+
+<script src="../generators/arduino.js"></script>
+<script src="../generators/arduino/bioblocks.js"></script>
+
+Luego, después de
+
+    <input type="button" value="To Dart" onclick="toCode('Dart')">
+    &nbsp;
+
+Añade
+    <input type="button" value="To Arduino" onclick="toCode('Arduino')">
+    <br>
+
+Y ya está
