@@ -20,7 +20,7 @@
 
 /**
  * @fileoverview Generating Arduino for bioblocks blocks.
- * @author --
+ * @author Jorge Díez García-Victoria
  */
 'use strict';
 

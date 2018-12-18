@@ -5,8 +5,10 @@
 <title>PXT-Blockly Playground</title>
 <script src="../blockly_uncompressed.js"></script>
 <script src="../blocks/bioblocks.js"></script>
+<script src="../blocks/pinwriting.js"></script>
 <script src="../generators/arduino.js"></script>
 <script src="../generators/arduino/bioblocks.js"></script>
+<script src="../generators/arduino/pinwriting.js"></script>
 <script src="../generators/javascript.js"></script>
 <script src="../generators/javascript/logic.js"></script>
 <script src="../generators/javascript/loops.js"></script>
@@ -571,6 +573,34 @@ line.blocklyFlyoutLine {
   <xml id="toolbox-categories" style="display: none">
         <category name="Bioblocks" colour="230" iconclass="blocklyTreeIconCustom">
       <block type="pin_dropdown"></block>
+      <block type="selector"></block>
+      <block type="new_centrifuge">
+        <value name="SPEED">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+        <value name="RPM">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+        <value name="DURATION">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+        <value name="OPERATION_TIME">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+        <value name="TEMPERATURE">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+      </block>
     </category>
     <category name="Logic" colour="210" iconclass="blocklyTreeIconCustom logic">
       <label text="Logic" web-icon="" web-class="blocklyFlyoutHeading"></label>
