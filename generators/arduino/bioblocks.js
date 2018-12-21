@@ -28,5 +28,20 @@ goog.provide('Blockly.Arduino.bioblocks');
 goog.require('Blockly.Arduino');
 
 Blockly.Arduino['pin_dropdown'] = function(block) {
-  return ["char pin" + block.getFieldValue('CONSTANT') +  " = " + block.getFieldValue('CONSTANT') + ";"];
+  return ["char pin" + block.getFieldValue('PIN') +  " = " + block.getFieldValue('PIN') + ";"];
+};
+
+
+Blockly.Arduino['selector'] = function(block) {
+	return ["digitalWrite(" + block.getFieldValue('PORT') +  ", " + block.getFieldValue('MODE') + ");"];
+};
+
+//Code without implementation, since more is needed to be able to generate functioning code
+Blockly.Arduino['new_centrifuge'] = function(block) {
+  return ["char connection" + block.getFieldValue('Connected to') +  " = " + block.getFieldValue('Connected to "') + ";\n"
+              + "float speed = " + block.getFieldValue('SPEED') + ";\n" + 
+              + "float RPM = " + block.getFieldValue('RPM') + ";\n"
+              + "float duration = " + block.getFieldValue('DURATION') + ";\n"
+              + "float operation_time = " + block.getFieldValue('OPERATION_TIME') + ";\n" 
+              + "float temperature = " + block.getFieldValue('TEMPERATURE') + ";\n"];
 };
